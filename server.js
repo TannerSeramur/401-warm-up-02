@@ -4,11 +4,9 @@
 const express = require('express');
 const app = express();
 
-
 // ejs template setup
 app.set('views', `${__dirname}/views`);
 app.set('view engine', 'ejs');
-
 
 // static routes
 app.use(express.static(`${__dirname}/public`))
@@ -48,9 +46,5 @@ module.exports ={
         app.listen(port, ()=>{console.log(`server is up on ${port}`)});
     }
 }
-
-// app.listen(8080, ()=>{console.log('server is up on 8080')});
-
-
 
 
