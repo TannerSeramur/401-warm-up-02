@@ -32,6 +32,12 @@ function mapp(arr, cb){
     }
     return newArr;
   }
+  function reduce(arr, cb, startVal){
+    for(let i = 0; i < arr.length; i++){
+      startingValue = cb(arr[i], i, startVal);
+    }
+    return startVal;
+  }
 
 
 // part2
