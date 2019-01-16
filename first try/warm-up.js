@@ -56,3 +56,4 @@ let newPeople = ['odie', ...people, 'garfield'];
 const newStuff = {...stuff, cars:[ ...stuff.cars,'subaru']};
 let newState = {...people, ...stuff};
 
+app.listen(3000, () => console.log('port is running on 3000'));
